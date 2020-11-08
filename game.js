@@ -16,14 +16,12 @@ $(".btn").click(function(){
 
 });
 
-
 var firstClick = (function() {  
     if (!executed) {
         executed = true;
         nextSequence()
     }   
 });
-
 
 function nextSequence (){
     userClickedPattern = [];
@@ -40,7 +38,7 @@ function nextSequence (){
 };
 
 function playSound(name){
-    var audio = new Audio("sounds/" + name + ".mp3");
+    var audio = new Audio(name + ".mp3");
     audio.play();
 };
 
@@ -100,7 +98,3 @@ function startOver(){
     $(".center").removeClass("game-over");
 
 }
-
-
-
-
