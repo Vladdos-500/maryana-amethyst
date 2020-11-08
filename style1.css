@@ -1,0 +1,75 @@
+body{
+    background-image: linear-gradient(315deg, #29323c,  #485563);
+    max-height: 96vh;
+}
+h1{
+    color: aliceblue;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    text-align: center;
+}
+.section{
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 50%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-inner{
+    padding: 60px;
+    color: #eaeaea;
+    background-image: linear-gradient(#4e4e51, #161616);
+    border-radius: 50%;
+    display: inline-block;
+}
+.center{
+    border-radius: 50%;
+    padding: 15px;
+    background-image: linear-gradient(#58585c, #161616);
+    z-index: 10;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+
+}
+.center-inner:before{
+    content: "PLAY";
+    font-size: 3rem;
+    position: absolute; 
+    margin-left: -37px;
+    margin-top: -24px;
+    color: #eaeaea;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+.side-buttons{
+    position: absolute;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 2fr;
+
+}
+.side-buttons img{
+    width: 200px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.btn{
+    height: 200px;
+}
+
+.pressed {
+    transform: scale(0.9);
+}
+
+.game-over{
+    -webkit-filter: drop-shadow(0 0 15px red)!important;
+    filter: drop-shadow(0px 0px 15px red)!important;
+
+}
